@@ -62,7 +62,7 @@ public class DemoTest {
       Assert.assertNotEquals(browser, "chrome");
     }
 
-    //throw new Exception("test");
+    throw new Exception("test");
   }
 
 //
