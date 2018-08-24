@@ -1,2 +1,4 @@
 com.element34.testng.listeners.TestMultiplexer
 com.element34.testng.listeners.DriverBinder
+com.element34.testng.listeners.Report
+org.testng.reporters.EmailableReporter2

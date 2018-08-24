@@ -19,7 +19,7 @@ public class RetryAnalyser implements IRetryAnalyzer {
     if (result.isSuccess()) {
       return false;
     }
-    if (result.getThrowable() instanceof Exception) {
+    if (result.getThrowable() instanceof AssertionError) {
 
       List<ITestResult> results = RetryCache.RETRY_CACHE.getOrDefault(result.getInstance(), new ArrayList<>());
       results.add(result);
